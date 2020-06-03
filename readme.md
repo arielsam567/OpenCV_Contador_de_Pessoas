@@ -1,16 +1,19 @@
-# OpenCV People Counter
-This program counts number of people incomming and outgoing a particular door. The example video is shot with Raspberry Pi Camera. I use OpenCV and Python 2.7. Make sure you install the `numpy`, `cv2`, `imutils` before you run the program.
+# OpenCV Contador de Pessoas
+Este programa conta a quantidade de pessoas que entram e saem de uma porta . Existe um vídeo de exemplo, para testar o código.
 
-Steps to execute the program with video source
-1. Make sure you install the above mentioned dependencies.
-2. Place your video file and replace `people-capture.mp4` in the line `video = cv2.VideoCapture("people-capture.mp4")` with your video filename
-3. Open your Terminal in OpenCV Environment
-4. Run `python counter.py`
+Este código foi utilizado em um Respberry Pi 3 modelo B, com o Noobs como SO.
+OpenCV versão 3.2.0
 
-Steps to execute the program on Raspyberry Pi 3
-1. Make sure you install the above mentioned dependencies.
-2. Also make sure you have camera connected to your Pi3.
-3. Open your Terminal in OpenCV Environment
-4. Run `python raspberry.py`
+Script necessário para baixar as dependências no Raspberry
 
-This is ain't a perfect solution for all use cases, I will be constantly improving algorithm. In the next update I am working to integrate the algorithm with custom haar cascade.
+sudo apt-get update  
+sudo apt-get -y install python-pip 
+sudo apt-get -y install python-git 
+sudo apt-get -y install python-numpy 
+sudo apt-get -y install python-scipy 
+sudo apt-get -y install python-opencv 
+sudo pip install --upgrade cython  
+sudo pip install -U scikit-learn 
+sudo pip install imutils 
+sudo apt-get -y install python-sklearn
+sudo apt-get -y install python-skimage  
