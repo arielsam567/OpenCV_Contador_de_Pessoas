@@ -74,9 +74,9 @@ while True:
     cv2.putText(frame, "Entrou: {}".format(count1), (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
     cv2.putText(frame, "Saiu: {}".format(count2), (10, 40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
     cv2.putText(frame, "Dentro: {}".format((count1-count2)), (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
-    #cv2.imshow("Frame",frame)
+    cv2.imshow("Frame",frame)
     #cv2.imshow("Gray",gray)
-    cv2.imshow("FrameDelta",frameDelta)
+    #cv2.imshow("FrameDelta",frameDelta)
     
     key = cv2.waitKey(1) & 0xFF
     if key == ord('q'):
